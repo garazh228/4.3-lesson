@@ -6,3 +6,14 @@
 //
 
 import Foundation
+import UIKit
+
+
+struct Contact {
+    var image: String
+    var name: String
+    var phoneNumber: String
+    var profilePhoto: UIImage?
+}
+
+
