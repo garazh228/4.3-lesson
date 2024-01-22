@@ -18,6 +18,15 @@ class SecondViewController: UIViewController, UITableViewDataSource {
        tableView.translatesAutoresizingMaskIntoConstraints = false
        return tableView
     }()
+    
+    
+//    let profileImageView: UIImageView = {
+//        let imageView = UIImageView()
+//        imageView.contentMode = .scaleAspectFill
+//        imageView.layer.cornerRadius = 25
+//        imageView.translatesAutoresizingMaskIntoConstraints = false
+//        return imageView
+//    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,12 +51,12 @@ class SecondViewController: UIViewController, UITableViewDataSource {
     
     private func setupData() {
         contacts = [
-            Contact(image: "person", name: "Tom Hanks", phoneNumber: "+7 777 777 777"),
-            Contact(image: "person", name: "Leonardo DiCaprio", phoneNumber: "+1 111 111 111"),
+            Contact(image: "person", name: "Tom Hanks", phoneNumber: "+7 777 777 777", profilePhoto: UIImage(named: "tom")),
+            Contact(image: "person", name: "Leonardo DiCaprio", phoneNumber: "+1 111 111 111", profilePhoto: UIImage(named: "di")),
             Contact(image: "person", name: "Denzel Washington", phoneNumber: "+2 222 222 222"),
             Contact(image: "person", name: "Robert De Niro", phoneNumber: "+5 555 555 555"),
             Contact(image: "person", name: "Brad Pitt", phoneNumber: "+0 000 000 000"),
-            Contact(image: "person", name: "Johnny Depp", phoneNumber: "+3 333 333 333"),
+            Contact(image: "person", name: "Johnny Depp", phoneNumber: "+3 333 333 333", profilePhoto: UIImage(named: "depp")),
             Contact(image: "person", name: "Will Smith", phoneNumber: "+3 333 333 333"),
             Contact(image: "person", name: "Morgan Freeman", phoneNumber: "+8 888 888 888"),
             Contact(image: "person", name: "Harrison Ford", phoneNumber: "+3 333 333 333"),

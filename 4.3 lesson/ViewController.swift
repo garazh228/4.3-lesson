@@ -182,7 +182,7 @@ class ViewController: UIViewController {
     @objc func showNextPage(_ sender: UIButton) {
         guard let text = tf.text else {return}
         
-        if text.hasPrefix("+996") {
+        if text.hasPrefix("+996") && text.count == 13 {
             
             let vc2 = SecondViewController()
             navigationController?.pushViewController(vc2, animated: true)
